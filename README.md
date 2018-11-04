@@ -14,3 +14,5 @@ node liri.js concert-this Reo Speedwagon
 
 To search for what's in the random file, type the following command:
 node.liri.js do-what-it-says
+
+To view the demo, please open liri-app-demo.mp4 
