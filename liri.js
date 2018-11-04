@@ -129,6 +129,7 @@ function getBand(bandName) {
 };
 
 
+//---------- function to read from a file and search for a song w/in the file on spotify ----------
 function doWhatItSays() {
     fs.readFile("random.txt", "utf8", function (err, data) {
        var txt = data.split(",");
