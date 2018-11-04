@@ -69,6 +69,7 @@ function getMovie(movieName) {
 
     if (!movieName) {
         movieName = "Mr. Nobody.";
+        console.log("It's on Netflix!");
     };
     console.log(movieName);
 
