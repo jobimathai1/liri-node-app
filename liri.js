@@ -33,6 +33,10 @@ switch (appArgs) {
     case 'concert-this':
         getBand(input);
         break;
+
+    case 'do-what-it-says':
+        doWhatItSays();
+        break;
 }
 
 
@@ -123,3 +127,11 @@ function getBand(bandName) {
         }
     })
 };
+
+
+function doWhatItSays() {
+    fs.readFile("random.txt", "utf8", function (err, data) {
+       var txt = data.split(",");
+       getSong(txt[1]);
+    })
+ };
